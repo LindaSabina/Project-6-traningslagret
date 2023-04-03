@@ -1,0 +1,126 @@
+@use '../components/buttons' as button;
+@use '../components/details';
+
+.opening-hours {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+
+    &__inner {
+        grid-column: inner;
+        margin-bottom: var(--section-gap);
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: var(--gap-xl);
+    }
+
+    &__title {
+        display: flex;
+        gap: var(--gap-m);
+        align-items: flex-end;
+        // line-height: 0;
+
+        h3 {
+            margin: 0;
+        }
+
+        h4 {
+            margin: 0;
+            font-size: var(--font-size-5);
+            color: var(--color-accent-blue);
+            line-height: 1.3;
+        }
+
+    }
+
+    &__button {
+        @include button.default;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: var(--inner-grid);
+        // gap: var(--gap-m);
+    }
+
+    &__card {
+        padding: var(--gap-l) 0 var(--gap-m) 4.8rem;
+
+        &-title {
+            padding-left: 1rem;
+            padding-bottom: 2rem;
+
+            &--reception {
+                color: var(--color-light);
+                
+            }
+        }
+
+        &--reception {
+            background-color: var(--color-dark-200);
+            padding: var(--gap-l) var(--gap-m) var(--gap-m) var(--gap-m);
+
+            p {
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.42);
+                text-align: center;
+                margin-top: 1.2rem;
+            }
+
+            @include details.triangle($position: top, $background-color: rgba(255, 255, 255, 0.21),
+            $hover-background: rgba(255, 255, 255, 0.21));
+        }
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            font-family: var(--font-sans);
+            font-style: normal;
+            font-size: var(--font-size-s);
+            width: 100%;
+            padding: 0.5rem 1rem ;
+            color: var(--color-light-600);
+            margin-bottom: 6px;
+
+            &:nth-child(odd) {
+                background-color: var(--color-light-200);
+
+            }
+
+            span:first-of-type {
+                font-weight: 600;
+            }
+
+            &--current {
+                color: var(--color-accent-blue);
+            }
+            
+        }
+
+        &--reception {
+
+            .opening-hours__list-item {
+                color: var(--color-light);
+
+                &:nth-child(odd) {
+                    background-color:rgba(255, 255, 255, 0.07);
+                }
+
+                &--current {
+                    color: var(--color-accent-red);
+                }
+            }
+        }
+    }
+}
+
