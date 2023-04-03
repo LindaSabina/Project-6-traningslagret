@@ -1,0 +1,17 @@
+.site-header {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+
+    &__inner {
+        grid-column: inner;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__branding {
+        padding-top: 2.6rem;
+    }
+}
