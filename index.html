@@ -4,12 +4,428 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCSS - BASE</title>
+    <title>Projekt 6 - Träningslagret</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vcb0hxm.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="container">
 
-    
+    <header class="site-header">
+
+        <div class="site-header__inner">
+
+            <a href="" class="site-header__branding">
+                <svg xmlns="http://www.w3.org/2000/svg" width="136.827" height="89.051" viewBox="0 0 136.827 89.051">
+                    <g id="Logo" transform="translate(-219.504 -44)">
+                      <g id="Group_1" data-name="Group 1" transform="translate(219.504 44)">
+                        <path id="Subtraction_1" data-name="Subtraction 1" d="M42.121,89.051A44.569,44.569,0,0,1,0,59H5.947a38.986,38.986,0,0,0,72.347,0h5.948A44.479,44.479,0,0,1,42.121,89.051ZM10.56,21.706H3.88A44.8,44.8,0,0,1,19.822,5.977a44.5,44.5,0,0,1,44.6,0A44.8,44.8,0,0,1,80.362,21.705H73.681A39.245,39.245,0,0,0,60.106,9.971a38.853,38.853,0,0,0-35.971,0A39.245,39.245,0,0,0,10.56,21.706Z" transform="translate(26.057)" fill="#fff"/>
+                        <path id="Path_8" data-name="Path 8" d="M9.169-44.114v-2.493H.5v2.493H3.34V-22.92H6.332V-44.114ZM10.478-22.92H13.47v-10.1h1.278l1.839,10.1h2.9l-1.87-10.317,1.652-1.652v-9.849l-1.87-1.87H10.478ZM15.652-35.45H13.47v-8.665h2.182l.623.623v7.418Zm9.257-12.872v-3.366H21.916v3.366Zm4.426,0v-3.366H26.342v3.366ZM26.966-29.029l.592,6.109h3.117l-2.9-23.688h-4.3L20.638-22.92h2.992l.592-6.109Zm-.218-2.556H24.441l1.153-11.937Zm5.236,8.665H34.7V-39.1L38.124-22.92h3.241V-46.608H38.653v16.425L35.225-46.608H31.984Zm11.439,0h2.992V-46.608H43.422Zm5.049,0h2.712V-39.1L54.611-22.92h3.241V-46.608H55.141v16.425L51.713-46.608H48.471Zm11.345-1.87,1.87,1.87H66.58l1.87-1.87V-35.263H63.962v2.68h1.5V-26.1l-.623.623h-1.4l-.623-.623V-43.429l.623-.623h1.4l.623.623v3.709H68.45v-5.018l-1.87-1.87H61.686l-1.87,1.87ZM75.463-39.751h2.992v-4.987l-1.87-1.87H72l-1.87,1.87v9.226L72-33.642h2.93l.623.623v6.982l-.623.623H73.686l-.623-.623v-3.709H70.071v4.956l1.87,1.87h4.738l1.87-1.87v-9.537l-1.87-1.87h-2.93l-.623-.623v-6.67l.623-.623h1.091l.623.623ZM87.275-22.92v-2.556H83.317V-46.608H80.325V-22.92Zm6.919-6.109.592,6.109H97.9L95-46.608H90.7L87.867-22.92H90.86l.592-6.109Zm-.218-2.556H91.67l1.153-11.937Zm4.956,6.795,1.87,1.87H105.7l1.87-1.87V-35.263h-4.488v2.68h1.5V-26.1l-.623.623h-1.4l-.623-.623V-43.429l.623-.623h1.4l.623.623v3.709h2.992v-5.018l-1.87-1.87H100.8l-1.87,1.87Zm10.535,1.87h2.992v-10.1h1.278l1.839,10.1h2.9L116.6-33.237l1.652-1.652v-9.849l-1.87-1.87h-6.919Zm5.174-12.529h-2.182v-8.665h2.182l.623.623v7.418Zm5.735,12.529h7.449v-2.556h-4.457v-8.166H127.2V-36.2h-3.834v-7.854h4.395v-2.556h-7.387Zm16.955-21.194v-2.493h-8.665v2.493H131.5V-22.92h2.992V-44.114Z" transform="translate(-0.504 76.907)" fill="#fff"/>
+                        <path id="Path_9" data-name="Path 9" d="M4.1-18.24H.974L-.816-8.088H.466l.788-4.475H2.911l.2-1.1H1.455l.614-3.486H3.913ZM2.911-8.088H4.193L5.983-18.24H4.7Zm7.16-9.083.187-1.069H6.544l-.187,1.069H7.573L5.97-8.088H7.252l1.6-9.083ZM9.029-8.088h1.162l1.229-6.933.24,6.933h1.389l1.79-10.152H13.677L12.435-11.2l-.227-7.039H10.819Zm4.9,0h3.192l.187-1.1H15.4l.628-3.5h1.643l.187-1.1H16.215l.6-3.366H18.7l.187-1.1H15.721ZM21.184-15.3h1.282l.374-2.137-.655-.8H20.222l-.948.8-.695,3.954.668.8H20.5l.214.267L20.2-9.424l-.321.267h-.534l-.214-.267.281-1.59H18.125L17.751-8.89l.655.8h2.03l.948-.8.721-4.087-.668-.8H20.182l-.214-.267.494-2.859.321-.267h.468l.214.267Zm4.274,0h1.282l.374-2.137-.655-.8H24.5l-.948.8-.695,3.954.668.8h1.256l.214.267L24.47-9.424l-.321.267h-.534L23.4-9.424l.281-1.59H22.4L22.026-8.89l.655.8h2.03l.948-.8.721-4.087-.668-.8H24.457l-.214-.267.494-2.859.321-.267h.468l.214.267ZM28.517-8.89l.655.8h1.977l.948-.8.4-2.3H31.216l-.307,1.736-.321.267h-.481l-.214-.267L31.2-16.9l.321-.267H32l.214.267-.307,1.75h1.282l.4-2.284-.655-.8H30.962l-.948.8Zm4.168.8h3.192l.187-1.1h-1.91l.628-3.5h1.643l.187-1.1H34.969l.6-3.366h1.883l.187-1.1H34.475Zm3.874,0h1.162l1.229-6.933.24,6.933h1.389l1.79-10.152H41.207L39.965-11.2l-.227-7.039H38.349Zm9.9-9.083.187-1.069H42.93l-.187,1.069h1.216l-1.6,9.083h1.282l1.6-9.083ZM45.415-8.088h3.192l.187-1.1h-1.91l.628-3.5h1.643l.187-1.1H47.7l.6-3.366h1.883l.187-1.1H47.2Zm3.874,0h1.282l.761-4.328h.548l.027,4.328h1.242l-.027-4.421.842-.708.735-4.221-.655-.8H51.078Zm3.166-5.37h-.935l.655-3.713h.935l.214.267-.561,3.179Z" transform="translate(41.267 77.103)" fill="#fff"/>
+                      </g>
+                    </g>
+                  </svg>
+            </a>
+
+            <nav class="menu">
+
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--current"><a href="" class="menu__link">Hem</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Träning</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Om oss</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Kontakt</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Öppettider</a></li>
+                </ul>
+
+                <div class="menu__button">
+                    <button class="hamburger"></button>
+                </div>
+            </nav>
+   
+        </div> 
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero__inner">
+
+            <div class="hero__content">
+
+                <h1 class="hero__title">Din hälsa är vårt mål<br>kom igång redan idag!</h1>
+
+                <div class="hero__buttons">
+                    <button class="hero__button-book">Boka/Schema</button>
+                    <button class="hero__button-member">Bli medlem</button>
+                </div>
+
+            </div>
+            
+            <footer class="hero__footer">
+
+                <a href="" class="hero__footer-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="29.901" viewBox="0 0 20.243 29.901">
+                        <g id="Arrow_right" data-name="Arrow right" transform="translate(-43.899 -733.986)">
+                          <path id="Line_5" data-name="Line 5" d="M0,10.121-2.121,8,8-2.121,10.121,0Z" transform="translate(54.02 753.766)" fill="#fff"/>
+                          <path id="Line_7" data-name="Line 7" d="M8,10.121-2.121,0,0-2.121,10.121,8Z" transform="translate(46.02 753.766)" fill="#fff"/>
+                          <path id="Line_6" data-name="Line 6" d="M1.5,28.487h-3V0h3Z" transform="translate(54.02 733.986)" fill="#fff"/>
+                        </g>
+                      </svg>
+                    <span>Läs mer</span> 
+                </a>
+
+                <div class="hero__socials">
+                    <a href="" class="hero__social facebook-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <path id="facebook" d="M3407.511,20h-2.177V12.917h2.5L3408.25,10h-2.916V7.916A1.574,1.574,0,0,1,3407,6.25h1.667V3.75a4.747,4.747,0,0,0-2.083-.417c-2.5,0-4.167,1.667-4.167,4.583V10h-2.5v2.917h2.5V20H3392V.023h2.936a3.371,3.371,0,0,1,.4-.023h13.334q.078,0,.155,0V0H3412V3.068h-.01c.007.088.01.176.01.266V20Z" transform="translate(-3392)" fill="#fff"/>
+                        </svg>
+                    </a>
+                    <a href="" class="hero__social instagram-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <path id="instagram" d="M3406.595,20v-.016q-.212.015-.427.016h-8.333q-.216,0-.429-.016V20H3392V14.595h.016c-.011-.141-.016-.284-.016-.428V5.834c0-.144,0-.287.016-.429H3392V0h5.405V.015c.141-.01.283-.015.427-.015h8.333c.148,0,.295.006.44.016L3406.595,0H3412l-.01,5.5q.01.163.01.328v8.334c0,.144-.006.287-.016.429H3412V20ZM3396.8,10a5.2,5.2,0,1,0,5.2-5.2A5.206,5.206,0,0,0,3396.8,10Zm10.4-6a.8.8,0,1,0,.8-.8A.8.8,0,0,0,3407.2,4Zm-8.8,6a3.6,3.6,0,1,1,3.6,3.6A3.6,3.6,0,0,1,3398.4,10Z" transform="translate(-3392)" fill="#fff"/>
+                          </svg>                          
+                    </a>
+                </div>
+
+            </footer>
+
+        </div>
+        
+    </section>
+
+    <section class="promos-small">
+
+        <div class="promos-small__inner">
+
+            <div class="promo-small promo-small-1">
+
+                <a href="" class="promo-small__overlay-link"></a>
+                
+                <div class="promo-small__content">
+                    <h4>Träna från</h4>
+                    <h3>479kr/mån*</h3>
+                </div>
+
+                <a href="" class="promo-small__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29.901" height="20.243" viewBox="0 0 29.901 20.243">
+                        <g id="Group_19" data-name="Group 19" transform="translate(-608.513 -703.757)">
+                          <g id="Arrow_right" data-name="Arrow right" transform="translate(-125.473 767.899) rotate(-90)">
+                            <path id="Line_5" data-name="Line 5" d="M0,10.121-2.121,8,8-2.121,10.121,0Z" transform="translate(54.02 753.766)" fill="#fff"/>
+                            <path id="Line_7" data-name="Line 7" d="M8,10.121-2.121,0,0-2.121,10.121,8Z" transform="translate(46.02 753.766)" fill="#fff"/>
+                            <path id="Line_6" data-name="Line 6" d="M1.5,28.487h-3V0h3Z" transform="translate(54.02 733.986)" fill="#fff"/>
+                          </g>
+                        </g>
+                      </svg>  
+                </a>
+
+            </div>
+            <div class="promo-small promo-small-2">
+
+                <a href="" class="promo-small__overlay-link"></a>
+                
+                <div class="promo-small__content">
+                    <h4>See vårt utbud av</h4>
+                    <h3>Gruppträning</h3>
+                </div>
+
+                <a href="" class="promo-small__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29.901" height="20.243" viewBox="0 0 29.901 20.243">
+                        <g id="Group_19" data-name="Group 19" transform="translate(-608.513 -703.757)">
+                          <g id="Arrow_right" data-name="Arrow right" transform="translate(-125.473 767.899) rotate(-90)">
+                            <path id="Line_5" data-name="Line 5" d="M0,10.121-2.121,8,8-2.121,10.121,0Z" transform="translate(54.02 753.766)" fill="#fff"/>
+                            <path id="Line_7" data-name="Line 7" d="M8,10.121-2.121,0,0-2.121,10.121,8Z" transform="translate(46.02 753.766)" fill="#fff"/>
+                            <path id="Line_6" data-name="Line 6" d="M1.5,28.487h-3V0h3Z" transform="translate(54.02 733.986)" fill="#fff"/>
+                          </g>
+                        </g>
+                      </svg>  
+                </a>
+
+            </div>
+            <div class="promo-small promo-small-3">
+
+                <a href="" class="promo-small__overlay-link"></a>
+                
+                <div class="promo-small__content">
+                    <h4>Sugen på att börja träna?</h4>
+                    <h3>Prova gratis!</h3>
+                </div>
+
+                <a href="" class="promo-small__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29.901" height="20.243" viewBox="0 0 29.901 20.243">
+                        <g id="Group_19" data-name="Group 19" transform="translate(-608.513 -703.757)">
+                          <g id="Arrow_right" data-name="Arrow right" transform="translate(-125.473 767.899) rotate(-90)">
+                            <path id="Line_5" data-name="Line 5" d="M0,10.121-2.121,8,8-2.121,10.121,0Z" transform="translate(54.02 753.766)" fill="#fff"/>
+                            <path id="Line_7" data-name="Line 7" d="M8,10.121-2.121,0,0-2.121,10.121,8Z" transform="translate(46.02 753.766)" fill="#fff"/>
+                            <path id="Line_6" data-name="Line 6" d="M1.5,28.487h-3V0h3Z" transform="translate(54.02 733.986)" fill="#fff"/>
+                          </g>
+                        </g>
+                      </svg>  
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="news">
+
+        <div class="news__inner">
+
+            <h3 class="news__title">Senaste nytt</h3>
+
+            <div class="news__cards">
+
+                <article class="news__card news__card-big">
+
+                    <header class="news__card-header">
+                        <span class="news__card-date">23 Mars 2023</span>
+                        <h2 class="news__card-title">Träningslagret Karlskoga</h2>
+                    </header>
+
+                    <div class="news__card-main">
+                        <div class="news__card-image">
+                            <img src="assets/images/news image 1@2x.png" alt="">
+                        </div>
+                        <p class="news__card-text">
+                            Ipsum dolor sit amet consectetur adipisicing elit. Qui ex incidunt vero sequi ratione? Consequatur, consequuntur at. Omnis ipsam ex quaerat sunt, soluta similique quod delectus, earum a iure hic! Incidunt est voluptatem harum. Provident, ab consectetur nihil voluptatibus reprehenderit, eius, amet illum distinctio reiciendis consequatur consequuntur hic. Ducimus iure eos in optio labore possimus vitae nihil sapiente neque aperiam.
+                        </p>
+                    </div>
+
+                    <footer class="news__card-footer">
+                        <div class="news__card-buttons">
+                            <button class="news__card-button">Läs mer</button>
+                        </div>
+
+                        <div class="news__card-share-link">
+                            <a href="">Dela +</a>
+
+                            <div class="news__card-share-socials">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path id="facebook" d="M3407.511,20h-2.177V12.917h2.5L3408.25,10h-2.916V7.916A1.574,1.574,0,0,1,3407,6.25h1.667V3.75a4.747,4.747,0,0,0-2.083-.417c-2.5,0-4.167,1.667-4.167,4.583V10h-2.5v2.917h2.5V20H3392V.023h2.936a3.371,3.371,0,0,1,.4-.023h13.334q.078,0,.155,0V0H3412V3.068h-.01c.007.088.01.176.01.266V20Z" transform="translate(-3392)" fill="#3F4A53"/>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path id="instagram" d="M3406.595,20v-.016q-.212.015-.427.016h-8.333q-.216,0-.429-.016V20H3392V14.595h.016c-.011-.141-.016-.284-.016-.428V5.834c0-.144,0-.287.016-.429H3392V0h5.405V.015c.141-.01.283-.015.427-.015h8.333c.148,0,.295.006.44.016L3406.595,0H3412l-.01,5.5q.01.163.01.328v8.334c0,.144-.006.287-.016.429H3412V20ZM3396.8,10a5.2,5.2,0,1,0,5.2-5.2A5.206,5.206,0,0,0,3396.8,10Zm10.4-6a.8.8,0,1,0,.8-.8A.8.8,0,0,0,3407.2,4Zm-8.8,6a3.6,3.6,0,1,1,3.6,3.6A3.6,3.6,0,0,1,3398.4,10Z" transform="translate(-3392)" fill="#3F4A53"/>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <g id="Group_20" data-name="Group 20" transform="translate(-1221 -741)">
+                                          <path id="Path_26" data-name="Path 26" d="M0,0H20V20H0Z" transform="translate(1221 741)" fill="#3f4a53"/>
+                                          <path id="icons8-twitter" d="M13.023,6.875a5.369,5.369,0,0,1-1.543.423,2.691,2.691,0,0,0,1.181-1.484,5.389,5.389,0,0,1-1.7.65A2.685,2.685,0,0,0,6.384,8.912a7.621,7.621,0,0,1-5.532-2.8,2.69,2.69,0,0,0,.831,3.585A2.682,2.682,0,0,1,.466,9.356V9.39a2.688,2.688,0,0,0,2.152,2.633,2.686,2.686,0,0,1-.707.094,2.585,2.585,0,0,1-.506-.049,2.69,2.69,0,0,0,2.507,1.865A5.38,5.38,0,0,1,.581,15.08a5.28,5.28,0,0,1-.639-.038,7.583,7.583,0,0,0,4.114,1.206,7.584,7.584,0,0,0,7.637-7.636c0-.116,0-.233-.007-.348A5.456,5.456,0,0,0,13.023,6.875Z" transform="translate(1224.518 740.067)" fill="#fff"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </footer>
+
+                </article>
+
+                <article class="news__card news__card-small">
+
+                    <header class="news__card-header">
+                        <span class="news__card-date">23 Mars 2023</span>
+                        <h2 class="news__card-title">Vi springer in pengar till barncancerfonden</h2>
+                    </header>
+
+                    <div class="news__card-main">
+                        <div class="news__card-image">
+                            <img src="assets/images/news image 2@2x.png" alt="">
+                        </div>
+                        <p class="news__card-text">
+                            Ipsum dolor sit amet consectetur adipisicing elit. Qui ex incidunt vero sequi.
+                        </p>
+                    </div>
+
+                    <footer class="news__card-footer">
+                        <div class="news__card-buttons">
+                            <button class="news__card-button">Läs mer</button>
+                        </div>
+                        <div class="news__card-share-link">
+                            <a href="">Dela +</a>
+                            <div class="news__card-share-socials">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path id="facebook" d="M3407.511,20h-2.177V12.917h2.5L3408.25,10h-2.916V7.916A1.574,1.574,0,0,1,3407,6.25h1.667V3.75a4.747,4.747,0,0,0-2.083-.417c-2.5,0-4.167,1.667-4.167,4.583V10h-2.5v2.917h2.5V20H3392V.023h2.936a3.371,3.371,0,0,1,.4-.023h13.334q.078,0,.155,0V0H3412V3.068h-.01c.007.088.01.176.01.266V20Z" transform="translate(-3392)" fill="#3F4A53"/>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path id="instagram" d="M3406.595,20v-.016q-.212.015-.427.016h-8.333q-.216,0-.429-.016V20H3392V14.595h.016c-.011-.141-.016-.284-.016-.428V5.834c0-.144,0-.287.016-.429H3392V0h5.405V.015c.141-.01.283-.015.427-.015h8.333c.148,0,.295.006.44.016L3406.595,0H3412l-.01,5.5q.01.163.01.328v8.334c0,.144-.006.287-.016.429H3412V20ZM3396.8,10a5.2,5.2,0,1,0,5.2-5.2A5.206,5.206,0,0,0,3396.8,10Zm10.4-6a.8.8,0,1,0,.8-.8A.8.8,0,0,0,3407.2,4Zm-8.8,6a3.6,3.6,0,1,1,3.6,3.6A3.6,3.6,0,0,1,3398.4,10Z" transform="translate(-3392)" fill="#3F4A53"/>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <g id="Group_20" data-name="Group 20" transform="translate(-1221 -741)">
+                                          <path id="Path_26" data-name="Path 26" d="M0,0H20V20H0Z" transform="translate(1221 741)" fill="#3f4a53"/>
+                                          <path id="icons8-twitter" d="M13.023,6.875a5.369,5.369,0,0,1-1.543.423,2.691,2.691,0,0,0,1.181-1.484,5.389,5.389,0,0,1-1.7.65A2.685,2.685,0,0,0,6.384,8.912a7.621,7.621,0,0,1-5.532-2.8,2.69,2.69,0,0,0,.831,3.585A2.682,2.682,0,0,1,.466,9.356V9.39a2.688,2.688,0,0,0,2.152,2.633,2.686,2.686,0,0,1-.707.094,2.585,2.585,0,0,1-.506-.049,2.69,2.69,0,0,0,2.507,1.865A5.38,5.38,0,0,1,.581,15.08a5.28,5.28,0,0,1-.639-.038,7.583,7.583,0,0,0,4.114,1.206,7.584,7.584,0,0,0,7.637-7.636c0-.116,0-.233-.007-.348A5.456,5.456,0,0,0,13.023,6.875Z" transform="translate(1224.518 740.067)" fill="#fff"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </footer>
+
+                </article>
+
+                <article class="news__card news__card-small">
+
+                    <header class="news__card-header">
+                        <span class="news__card-date">23 Mars 2023</span>
+                        <h2 class="news__card-title">Vårens nyheter!</h2>
+                    </header>
+
+                    <div class="news__card-main">
+                        <div class="news__card-image">
+                            <img src="assets/images/news image 3@2x.png" alt="">
+                        </div>
+                        <p class="news__card-text">
+                            Ipsum dolor sit amet consectetur adipisicing elit. Qui ex incidunt vero sequi.
+                        </p>
+                    </div>
+
+                    <footer class="news__card-footer">
+                        <div class="news__card-buttons">
+                            <button class="news__card-button">Läs mer</button>
+                        </div>
+                        <div class="news__card-share-link">
+                            <a href="">Dela +</a>
+                            <div class="news__card-share-socials">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path id="facebook" d="M3407.511,20h-2.177V12.917h2.5L3408.25,10h-2.916V7.916A1.574,1.574,0,0,1,3407,6.25h1.667V3.75a4.747,4.747,0,0,0-2.083-.417c-2.5,0-4.167,1.667-4.167,4.583V10h-2.5v2.917h2.5V20H3392V.023h2.936a3.371,3.371,0,0,1,.4-.023h13.334q.078,0,.155,0V0H3412V3.068h-.01c.007.088.01.176.01.266V20Z" transform="translate(-3392)" fill="#3F4A53"/>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path id="instagram" d="M3406.595,20v-.016q-.212.015-.427.016h-8.333q-.216,0-.429-.016V20H3392V14.595h.016c-.011-.141-.016-.284-.016-.428V5.834c0-.144,0-.287.016-.429H3392V0h5.405V.015c.141-.01.283-.015.427-.015h8.333c.148,0,.295.006.44.016L3406.595,0H3412l-.01,5.5q.01.163.01.328v8.334c0,.144-.006.287-.016.429H3412V20ZM3396.8,10a5.2,5.2,0,1,0,5.2-5.2A5.206,5.206,0,0,0,3396.8,10Zm10.4-6a.8.8,0,1,0,.8-.8A.8.8,0,0,0,3407.2,4Zm-8.8,6a3.6,3.6,0,1,1,3.6,3.6A3.6,3.6,0,0,1,3398.4,10Z" transform="translate(-3392)" fill="#3F4A53"/>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <g id="Group_20" data-name="Group 20" transform="translate(-1221 -741)">
+                                          <path id="Path_26" data-name="Path 26" d="M0,0H20V20H0Z" transform="translate(1221 741)" fill="#3f4a53"/>
+                                          <path id="icons8-twitter" d="M13.023,6.875a5.369,5.369,0,0,1-1.543.423,2.691,2.691,0,0,0,1.181-1.484,5.389,5.389,0,0,1-1.7.65A2.685,2.685,0,0,0,6.384,8.912a7.621,7.621,0,0,1-5.532-2.8,2.69,2.69,0,0,0,.831,3.585A2.682,2.682,0,0,1,.466,9.356V9.39a2.688,2.688,0,0,0,2.152,2.633,2.686,2.686,0,0,1-.707.094,2.585,2.585,0,0,1-.506-.049,2.69,2.69,0,0,0,2.507,1.865A5.38,5.38,0,0,1,.581,15.08a5.28,5.28,0,0,1-.639-.038,7.583,7.583,0,0,0,4.114,1.206,7.584,7.584,0,0,0,7.637-7.636c0-.116,0-.233-.007-.348A5.456,5.456,0,0,0,13.023,6.875Z" transform="translate(1224.518 740.067)" fill="#fff"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </footer>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="promo-big">
+        <div class="promo-big__inner">
+            <div class="promo-big__content">
+                
+                <div class="promo-big__titles">
+                    <h2 class="promo-big__title">Behöver du hjälp att komma igång?</h2>
+                    <h4 class="promo-big__undertitle">Vi erbjuder både personlig träning och kostrådgivning!</h4>
+                </div>
+
+                <a href="" class="promo-big__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29.901" height="20.243" viewBox="0 0 29.901 20.243">
+                        <g id="Group_19" data-name="Group 19" transform="translate(-608.513 -703.757)">
+                          <g id="Arrow_right" data-name="Arrow right" transform="translate(-125.473 767.899) rotate(-90)">
+                            <path id="Line_5" data-name="Line 5" d="M0,10.121-2.121,8,8-2.121,10.121,0Z" transform="translate(54.02 753.766)" fill="#fff"/>
+                            <path id="Line_7" data-name="Line 7" d="M8,10.121-2.121,0,0-2.121,10.121,8Z" transform="translate(46.02 753.766)" fill="#fff"/>
+                            <path id="Line_6" data-name="Line 6" d="M1.5,28.487h-3V0h3Z" transform="translate(54.02 733.986)" fill="#fff"/>
+                          </g>
+                        </g>
+                    </svg>  
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="opening-hours">
+        <div class="opening-hours__inner">
+
+            <header class="opening-hours__header">
+                <div class="opening-hours__title">
+                    <h3 class="">Öppettider</h3>
+                    <h4>Vecka 13</h4>
+                </div>
+                <button class="opening-hours__button">
+                    Se kalender
+                </button>
+            </header>
+
+            <div class="opening-hours__cards">
+
+                <div class="opening-hours__card opening-hours__card--reception">
+                    <h3 class="opening-hours__card-title opening-hours__card-title--reception">Reception</h3>
+                    <ul class="opening-hours__list opening-hours__list--reception">
+                        <li class="opening-hours__list-item"><span>Måndag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Tisdag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Onsdag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Torsdag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item opening-hours__list-item--current"><span>Fredag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Lördag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Söndag</span><span>9.30-20.00</span></li>
+                    </ul>
+                    <p>Tiderna kan komma att förändras iochmed högtider/röda dagar.</p>
+                </div>
+
+                <div class="opening-hours__card opening-hours__card--bastu">
+                    <h3 class="opening-hours__card-title">Bastu</h3>
+                    <ul class="opening-hours__list">
+                        <li class="opening-hours__list-item"><span>Måndag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Tisdag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Onsdag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Torsdag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item opening-hours__list-item--current"><span>Fredag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Lördag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Söndag</span><span>9.30-20.00</span></li>
+                    </ul>
+                </div>
+
+                <div class="opening-hours__card opening-hours__card--keycard">
+                    <h3 class="opening-hours__card-title">Keycard</h3>
+                    <ul class="opening-hours__list">
+                        <li class="opening-hours__list-item"><span>Måndag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Tisdag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Onsdag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Torsdag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item opening-hours__list-item--current"><span>Fredag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Lördag</span><span>9.30-20.00</span></li>
+                        <li class="opening-hours__list-item"><span>Söndag</span><span>9.30-20.00</span></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="map__map">
+            <img class="map__image" src="assets/images/map@2x.png" alt="">
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            
+        </div>
+    </footer>
+
+
+</div>
+
 </body>
 </html>
