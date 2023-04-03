@@ -1,0 +1,113 @@
+@use '../components/details';
+
+.promos-small {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+
+    &__inner {
+        grid-column: inner;
+        display: grid;
+        grid-template-columns: var(--inner-grid);
+        gap: var(--gap-m);
+        margin-top: var(--gap-xl);
+        margin-bottom: var(--section-gap);
+    }
+}
+
+.promo-small {
+    width: 100%;
+    padding: var(--gap-l) var(--gap-l) var(--gap-xl) var(--gap-l);
+    
+        
+
+    h3 {
+        font-size: var(--font-size-7);
+        margin: 0;
+    }
+    
+    h4 {
+        font-size: var(--font-size-4);
+        margin: 0;
+    }
+
+    &-1 {
+        @include details.triangle($background-color: var(--color-accent-blue), $hover-background: var(--color-accent-blue-100));
+        background-color: var(--color-dark-100);
+
+        h4 {
+            color: var(--color-light-300);
+            position: relative;
+
+            &:after {
+                content: '* Gäller ungdom/Pensionär autogiro';
+                display: block;
+                position: absolute;
+                color: var(--color-dark-600);
+                font-size: 11px;
+                font-family: var(--font-sans);
+                font-style: normal;
+                bottom: -85px;
+            }
+        }
+
+        h3 {
+            color: var(--color-light);
+            
+        }
+
+        &:hover {
+            h3{
+                color: var(--color-accent-blue);
+                opacity: 0.9;
+            }
+        }
+
+    }
+
+    &-2 {
+        @include details.triangle($hover-background: var(--color-accent-red));
+
+        background-color: var(--color-light-200);
+
+        h3 {
+            color: var(--color-accent-red);
+        }
+
+        &:hover {
+            h3 {
+                color: var(--color-accent-red-100)
+            }
+        }
+    }
+
+    &-3 {
+        @include details.triangle;
+        background-color: var(--color-light-200);
+        transition: background-color 2s;
+        h4 {
+            color: var(--color-dark-500);
+        }
+
+        &:hover {
+            
+            h3 {
+                color: var(--color-accent-blue-100)
+            }
+        }
+    }
+
+    &__link {
+        position: absolute;
+        right: 10px;
+        bottom: 8px;
+        z-index: 10;
+    }
+
+    &__overlay-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
