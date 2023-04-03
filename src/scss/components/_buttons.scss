@@ -1,20 +1,23 @@
 @mixin default(
-    $background: var(--color-dark), 
+    $background: var(--color-accent-red), 
     $color: var(--color-light), 
-    $hover-background: var(--accent),
-    $hover-color: var(--color-light)) 
+    $hover-background: var(--color-accent-red-100),
+    $hover-color: var(--color-accent-red),
+    $font-size: var(--font-size-4)) 
     {
     background-color: $background;
     color: $color;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1.5rem;
     border: 0;
-    border-radius: 2rem;
-    font-size: 1rem;
-    font-weight: 700;
+    transform: skew(-10deg);
+    font-family: var(--font-cap);
+    // font-style: italic;
+    font-size: $font-size;
     display: inline-block;
     text-decoration: none;
+    transition: all 0.2s;
+
     &:hover {
         background-color: $hover-background;
-        color: $hover-color;
     }
-}
+    }   

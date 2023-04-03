@@ -1,58 +1,64 @@
 :root {
 
-    --section-gap: 8rem;
-    --section-gap-inner: calc( var(--section-gap) * 0.75 )
+    --section-gap: 6rem;
+    --section-gap-inner: calc( var(--section-gap) * 0.75 );
 
     --gap-xl: 4rem;
     --gap-l: 3rem;
+    --gap-ml: 2.5rem;
     --gap-m: 2rem;
     --gap-s: 1rem;
 
     --border-radius: 0px;
 
-    --color-dark: #222;
-    --color-dark-200: #333;
-    --color-dark-300: #444;
-    --color-dark-400: #666;
-    --color-dark-500: #888;
-    --color-dark-600: #999;
-    --color-dark-700: #b5b5b5;
-    --color-dark-800: #d5d5d5;
-    --color-dark-900: #f1f1f1;
+    --color-dark: #2b3135;
+    --color-dark-100: #3F4A53;
+    --color-dark-200: #435665;
+    --color-dark-300: #697884;
+    --color-dark-400: #707070;
+    --color-dark-500: #7F878C;
+    --color-dark-600: #90969B;
+    --color-dark-700: #CCCFD1;
+    --color-dark-800: #F2F3F3;
+    --color-dark-900: #fff;
 
-    --color-accent: #02668a;
-    --color-accent-200: #02668a;
-    --color-accent-300: #02668a;
-    --color-accent-400: #02668a;
-    --color-accent-500: #02668a;
-    --color-accent-600: #02668a;
-    --color-accent-700: #02668a;
-    --color-accent-800: #02668a;
-    --color-accent-900: #02668a;
+    --color-accent-red: #FD3E1D;
+    --color-accent-red-100: hsl(9, 98%, 40%);
 
-    --color-light: #efead8;
-    --color-light-200: #efead8;
-    --color-light-300: #efead8;
-    --color-light-400: #efead8;
-    --color-light-500: #efead8;
-    --color-light-600: #efead8;
-    --color-light-700: #efead8;
-    --color-light-800: #efead8;
-    --color-light-900: #efead8;
+    --color-accent-blue: #0584FF;
+    --color-accent-blue-100: hsl(210, 100%, 30%);
 
-    --font-sans: 'Arial', sans-serif;
-    --font-serif: 'Georgia', serif;
+    --color-light: #fff;
+    --color-light-200: #F2F3F3;
+    --color-light-300: #DCDEE0;
+    --color-light-400: #CCCFD1;
+    --color-light-500: #989b9b;
+    --color-light-600: #707070;
+    --color-light-700: #606060;
+    --color-light-800: #404040;
+    --color-light-900: #2b3135;
+    
 
-    --line-height: 1.5;
+    --font-cap: 'abolition', sans-serif;
+    --font-sans: 'industry', sans-serif;
+
+    --line-height: 1.7;
 
     --font-scale: 1.25;
     --font-size: 1rem;
 
     --font-size-1: var(--font-size);
+    --font-size-s: var(--font-size) * 1.125;
     --font-size-2: calc( var(--font-size-1) * var(--font-scale) );
     --font-size-3: calc( var(--font-size-2) * var(--font-scale) );
     --font-size-4: calc( var(--font-size-3) * var(--font-scale) );
     --font-size-5: calc( var(--font-size-4) * var(--font-scale) );
     --font-size-6: calc( var(--font-size-5) * var(--font-scale) );
+    --font-size-7: calc( var(--font-size-6) * var(--font-scale) );
+
+    --page-width: 80rem;
+    --grid-container: [full-start] minmax(32px, 1fr) [inner-start] minmax(0, var(--page-width)) [inner-end] minmax(32px, 1fr) [full-end];
+
+    --inner-grid: repeat(3, 1fr);
 
 }

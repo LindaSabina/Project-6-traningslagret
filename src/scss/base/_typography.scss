@@ -1,21 +1,27 @@
 body {
     font-family: var(--font-sans);
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(font-serif);
+    font-family: var(--font-cap);
+    font-style: italic;
+    color: var(--color-dark-100);
+    font-weight: 400;
 }
 
 h1 {
-
+    color: var(--color-light);
+    font-size: 6.25rem;
 }
 
 h2 {
-
+    font-size: 5.5rem;
 }
 
 h3 {
-
+    font-size: var(--font-size-7);
+    margin: 0;
 }
 
 h4 {
@@ -32,17 +38,21 @@ h6 {
 
 p {
     line-height: var(--line-height);
+    color: var(--color-dark-200);
+    font-size: var(--font-size-s);
+    font-weight: 400;
 }
 
 a {
-    color: var(--color-dark);
+    color: var(--color-dark-100);
     text-decoration: none;
     line-height: var(--line-height);
-    &:hover {
-        color: var(--color-accent);
-    }
+    font-family: var(--font-cap);
+    font-style: italic;
 }
 
 li {
-    line-height: var(--line-height);
+    font-family: var(--font-cap);
+    font-style: italic;
+    font-weight: 400;
 }
