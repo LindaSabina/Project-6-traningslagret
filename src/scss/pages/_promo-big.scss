@@ -1,0 +1,47 @@
+@use '../components/details';
+
+.promo-big {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+
+    &__inner {
+        grid-column: inner;
+        margin-bottom: var(--section-gap);
+    }
+
+    &__content {
+
+        background-image: url(../../../assets/images/promo\ image@2x.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        padding: 7rem var(--gap-l);
+        position: relative;
+        
+        @include details.triangle($background-color: var(--color-accent-blue), $hover-background: var(--color-accent-blue-100));
+
+        h2 {
+            color: var(--color-light);
+            margin: 0;
+        }
+
+        h4 {
+            color: var(--color-light-200);
+            margin: 0;
+            font-size: var(--font-size-5);
+        }
+
+        &:hover {
+            background-size: 120%;
+        }
+    }
+
+    &__link {
+        position: absolute;
+        right: 10px;
+        bottom: 8px;
+        z-index: 10;
+    }
+
+
+}
