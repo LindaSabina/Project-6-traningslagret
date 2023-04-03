@@ -1,0 +1,106 @@
+@use '../components/buttons' as button;
+
+.news {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+
+    &__inner {
+        grid-column: inner;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: var(--inner-grid);
+        padding: var(--gap-xl) 0;
+        gap: var(--gap-m);
+    }
+
+    &__card {
+
+        &-date {
+            font-size: var(--font-size-s);
+            color: var(--color-dark-300);
+        }
+
+        &-title {
+            margin: 10px 0 0 0;
+        }
+
+        &-footer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: var(--gap-m);
+        }
+
+        &-button {
+            @include button.default;
+        }
+
+        &-share-link {
+            font-size: var(--font-size-4);
+            display: flex;
+            align-items: center;
+            gap: var(--gap-s);
+
+            &:hover {
+
+                .news__card-share-socials {
+                    width: 100px;
+                }
+
+            }
+        }
+
+        &-share-socials {
+            width: 0;
+            overflow: hidden;
+            transition: width 0.3s;
+            display: flex;
+            gap: 1rem;
+            a {
+                line-height: 0;
+            }
+        }
+
+    }
+
+   
+    &__card-small {
+
+        grid-column: 3;
+        margin-bottom: var(--gap-m);
+
+        .news__card-title {
+            font-size: var(--font-size-5);
+        }
+
+        .news__card-main {
+            margin: var(--gap-s) 0;
+        }
+
+        .news__card-image {
+            margin-bottom: var(--gap-s);
+        }
+    }
+
+    &__card-big {
+        grid-column: span 2;
+        grid-row: span 2;
+        width: 100%;
+        padding-right: 77px;
+
+        .news__card-title {
+            font-size: 5.5rem;
+        }
+
+        .news__card-main {
+            margin: var(--gap-ml) 0;
+        }
+
+        .news__card-image {
+            margin-bottom: var(--gap-ml);
+        }
+    }
+
+}
