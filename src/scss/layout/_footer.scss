@@ -1,3 +1,5 @@
+@use '../utilities/responsive';
+
 .site-footer {
     background-color: var(--color-dark);
     display: grid;
@@ -6,13 +8,26 @@
     &__inner {
         grid-column: inner;
         padding-top: var(--section-gap);
-        gap: var(--gap-m);
+
+        @include responsive.max(540px) {
+            padding-top: var(--gap-xl);
+          }
     }
 
     &__content {
         display: grid;
         grid-template-columns: var(--inner-grid);
         margin-bottom: var(--section-gap-inner);
+        gap: var(--gap-m);
+
+        @include responsive.max(900px) {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        @include responsive.max(540px) {
+            gap: var(--gap-s);
+          }
+
     }
 
     &__address {
@@ -24,6 +39,19 @@
             span {
                 font-weight: 600;
             }
+
+            @include responsive.max(540px) {
+                font-size: 14px;
+              }
+      
+        }
+    }
+
+    &__logo {
+        @include responsive.max(540px) {
+            svg {
+                width: 110px;
+            }
         }
     }
 
@@ -34,6 +62,12 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+
+        @include responsive.max(900px) {
+            padding: 0;
+            align-items: end;
+        }
+
 
         &-item {
             padding-bottom: var(--gap-s);
@@ -48,6 +82,10 @@
             font-family: var(--font-sans);
             font-style: normal;
             font-size: var(--font-size-1);
+
+            &:hover {
+                color: var(--color-light-400);
+            }
         }
     }
 
@@ -56,16 +94,38 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: end;
+
+        @include responsive.max(900px) {
+            flex-direction: row;
+            align-items: center;
+            grid-column: span 2;
+            margin-top: var(--gap-m);
+
+            .site-footer__friskvard {
+                padding-top: 0;
+            }
+          }
     }
 
     &__friskvard {
         padding-top: var(--gap-ml);
-        max-width: 16.25rem;
+        max-width: 16rem;
+
+        @include responsive.max(540px) {
+            width: 150px;
+        }
     }
 
     &__socials {
         a {
             margin-left: var(--gap-s);
+
+            &:hover {
+                path {
+                    fill: var(--color-light-400)
+                }
+               
+            }
         }
     }
 
@@ -73,6 +133,13 @@
         margin-bottom: var(--gap-ml);
         p {
             color: rgba(255, 255, 255, 0.53);
+        }
+
+        @include responsive.max(540px) {
+            text-align: center;
+            p {
+                font-size: 14px;
+            }
         }
     }
 }
