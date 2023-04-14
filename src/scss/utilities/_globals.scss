@@ -12,7 +12,7 @@
     --border-radius: 0px;
 
     --color-dark: #2b3135;
-    --color-dark-100: #3F4A53;
+    --color-dark-100: rgb(63, 74, 83);
     --color-dark-200: #435665;
     --color-dark-300: #697884;
     --color-dark-400: #707070;
@@ -60,5 +60,6 @@
     --grid-container: [full-start] minmax(32px, 1fr) [inner-start] minmax(0, var(--page-width)) [inner-end] minmax(32px, 1fr) [full-end];
 
     --inner-grid: repeat(3, 1fr);
+
 
 }
