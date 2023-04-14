@@ -1,3 +1,5 @@
+@use '../utilities/responsive';
+
 @mixin default(
     $background: var(--color-accent-red), 
     $color: var(--color-light), 
@@ -20,4 +22,9 @@
     &:hover {
         background-color: $hover-background;
     }
+
+    @include responsive.max(1120px) {
+        font-size: var(--font-size-3);
+    }
+
     }   
