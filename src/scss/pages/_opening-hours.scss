@@ -1,5 +1,6 @@
 @use '../components/buttons' as button;
 @use '../components/details';
+@use '../utilities/responsive';
 
 .opening-hours {
     display: grid;
@@ -8,6 +9,10 @@
     &__inner {
         grid-column: inner;
         margin-bottom: var(--section-gap);
+
+        @include responsive.max(540px) {
+            margin-bottom: var(--gap-l);
+          }
     }
 
     &__header {
@@ -16,13 +21,20 @@
         align-items: center;
         width: 100%;
         margin-bottom: var(--gap-xl);
+
+        @include responsive.max(740px) {
+            margin-bottom: var(--gap-l);   
+        }
+
+        @include responsive.max(540px) {
+            margin-bottom: var(--gap-m);   
+        }
     }
 
     &__title {
         display: flex;
         gap: var(--gap-m);
         align-items: flex-end;
-        // line-height: 0;
 
         h3 {
             margin: 0;
@@ -35,6 +47,29 @@
             line-height: 1.3;
         }
 
+        @include responsive.max(740px) {
+            gap: var(--gap-s);
+
+            h3 {
+                font-size: var(--font-size-5);
+            }
+
+            h4 {
+                font-size: var(--font-size-3);
+            }
+        }
+
+        @include responsive.max(540px) {
+            display: block;
+            h3 {
+                font-size: var(--font-size-4);
+            }
+
+            h4 {
+                font-size: var(--font-size-2);
+            }
+        }
+
     }
 
     &__button {
@@ -44,20 +79,70 @@
     &__cards {
         display: grid;
         grid-template-columns: var(--inner-grid);
-        // gap: var(--gap-m);
+
+        @include responsive.max(900px) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     &__card {
         padding: var(--gap-l) 0 var(--gap-m) 4.8rem;
 
+        @include responsive.max(1000px) {
+            padding-left: var(--gap-l);
+        }
+
+        @include responsive.max(900px) {
+            &:last-of-type {
+                padding: var(--gap-l) 0 var(--gap-m) 0;
+                .opening-hours__list-item {
+                    padding-left: 2.5rem;
+                    padding-right: 2.5rem;
+                }
+            }
+        }
+
+        @include responsive.max(670px) {
+            grid-column: span 2;
+            padding: var(--gap-l) var(--gap-m) var(--gap-m) var(--gap-m);
+
+            &:last-of-type {
+                padding-top: var(--gap-s);
+            }
+
+            &:nth-of-type(2) {
+                padding: var(--gap-l) 0 var(--gap-m) 0;
+                .opening-hours__list-item {
+                    padding-left: 2.5rem;
+                    padding-right: 2.5rem;
+                }
+            }
+        }
+
         &-title {
             padding-left: 1rem;
             padding-bottom: 2rem;
 
-            &--reception {
-                color: var(--color-light);
-                
+            @include responsive.max(740px) {
+                font-size: var(--font-size-6);   
             }
+
+            &--reception {
+                color: var(--color-light); 
+            }
+
+            &--keycard {
+                @include responsive.max(900px) {
+                    padding-left: 2.5rem;   
+                }
+            }
+    
+            &--bastu {
+                @include responsive.max(740px) {
+                    padding-left: 2.5rem;   
+                }
+            }
+
         }
 
         &--reception {
@@ -74,12 +159,15 @@
             @include details.triangle($position: top, $background-color: rgba(255, 255, 255, 0.21),
             $hover-background: rgba(255, 255, 255, 0.21));
         }
+
+       
     }
 
     &__list {
         list-style: none;
         margin: 0;
         padding: 0;
+
 
         &-item {
             display: flex;
@@ -94,7 +182,6 @@
 
             &:nth-child(odd) {
                 background-color: var(--color-light-200);
-
             }
 
             span:first-of-type {
