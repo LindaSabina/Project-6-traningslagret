@@ -1,9 +1,10 @@
 @use '../components/details';
+@use '../utilities/responsive';
 
 .promos-small {
     display: grid;
     grid-template-columns: var(--grid-container);
-
+    
     &__inner {
         grid-column: inner;
         display: grid;
@@ -11,48 +12,112 @@
         gap: var(--gap-m);
         margin-top: var(--gap-xl);
         margin-bottom: var(--section-gap);
+
+        @include responsive.max(880px) {
+            grid-template-columns: 1fr 1fr; 
+        }
+
+        @include responsive.max(740px) {
+            margin-bottom: var(--gap-xl);  
+        }
+  
     }
 }
 
 .promo-small {
     width: 100%;
-    padding: var(--gap-l) var(--gap-l) var(--gap-xl) var(--gap-l);
-    
-        
+    padding: var(--gap-l);
+
+    @include responsive.max(730px) {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    @include responsive.max(500px) {
+        text-align: left;
+    }
+
 
     h3 {
         font-size: var(--font-size-7);
         margin: 0;
+        transition: all 0.3s;   
+
+        @include responsive.max(1125px) {
+            font-size: var(--font-size-6);
+        }
+
+        @include responsive.max(990px) {
+            font-size: var(--font-size-5);
+        }
+
+        @include responsive.max(880px) {
+            font-size: var(--font-size-7);
+        }
+
+        @include responsive.max(500px) {
+            font-size: var(--font-size-6);
+        }
     }
     
     h4 {
         font-size: var(--font-size-4);
         margin: 0;
+
+        @include responsive.max(1125px) {
+            font-size: var(--font-size-3);
+        }
+
+        @include responsive.max(990px) {
+            font-size: var(--font-size-2);
+        }
+
+        @include responsive.max(880px) {
+            font-size: var(--font-size-4);
+        }
+
+        @include responsive.max(500px) {
+            font-size: var(--font-size-3);
+        }
+    }
+    
+    &__overlay-link {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
     }
 
+   
     &-1 {
+        
         @include details.triangle($background-color: var(--color-accent-blue), $hover-background: var(--color-accent-blue-100));
         background-color: var(--color-dark-100);
+        
 
         h4 {
-            color: var(--color-light-300);
-            position: relative;
-
-            &:after {
-                content: '* Gäller ungdom/Pensionär autogiro';
-                display: block;
-                position: absolute;
-                color: var(--color-dark-600);
-                font-size: 11px;
-                font-family: var(--font-sans);
-                font-style: normal;
-                bottom: -85px;
-            }
+            color: var(--color-light-300);  
         }
 
         h3 {
             color: var(--color-light);
-            
+        }
+
+        span {
+            color: var(--color-dark-600);
+            font-size: 11px;
+            font-family: var(--font-sans);
+            font-style: normal;
+
+            @include responsive.max(990px) {
+                font-size: 9px;
+            }
+
+            @include responsive.max(880px) {
+                font-size: 11px;
+            }
         }
 
         &:hover {
@@ -84,6 +149,15 @@
         @include details.triangle;
         background-color: var(--color-light-200);
         transition: background-color 2s;
+
+        @include responsive.max(880px) {
+            grid-column: span 2;
+            text-align: center;
+        }
+        @include responsive.max(500px) {
+            text-align: left;
+        }
+
         h4 {
             color: var(--color-dark-500);
         }
@@ -103,11 +177,4 @@
         z-index: 10;
     }
 
-    &__overlay-link {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-    }
 }
