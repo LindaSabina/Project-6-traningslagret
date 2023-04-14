@@ -15,14 +15,13 @@
 
     &--bg-scroll {
 
-        background-color: rgba(63, 74, 83, 0.85);
+        background-color: rgba(63, 74, 83, 0.9);
 
         .site-header__branding {
             padding: 0;
             width: 110px;
 
             svg .logo-cirkle{    
-                // fill: var(--color-dark-100);
                 display: none;
             }
 
@@ -107,6 +106,7 @@
         align-items: center;
         border: 0;
         background-color: inherit;
+        cursor: pointer;
 
         &--close {
 

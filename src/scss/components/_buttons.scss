@@ -21,6 +21,7 @@
 
     &:hover {
         background-color: $hover-background;
+        cursor: pointer;
     }
 
     @include responsive.max(1120px) {

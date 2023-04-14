@@ -37,11 +37,19 @@
         text-align: left;
     }
 
+    &:hover {
+        h3 {
+            scale: 1.1;
+        }
+    }
+
+    
 
     h3 {
         font-size: var(--font-size-7);
         margin: 0;
-        transition: all 0.3s;   
+        transition: scale 0.3s; 
+        scale: 1;  
 
         @include responsive.max(1125px) {
             font-size: var(--font-size-6);
@@ -58,6 +66,8 @@
         @include responsive.max(500px) {
             font-size: var(--font-size-6);
         }
+
+    
     }
     
     h4 {
@@ -79,6 +89,7 @@
         @include responsive.max(500px) {
             font-size: var(--font-size-3);
         }
+
     }
     
     &__overlay-link {
@@ -140,7 +151,7 @@
 
         &:hover {
             h3 {
-                color: var(--color-accent-red-100)
+                color: var(color-accent-red-100);
             }
         }
     }
@@ -165,8 +176,10 @@
         &:hover {
             
             h3 {
-                color: var(--color-accent-blue-100)
+                color: var(--color-accent-blue-100);
             }
+
+           
         }
     }
 

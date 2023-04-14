@@ -30,7 +30,7 @@
         transition: all 0.2s;
 
         @include responsive.max(700px) {
-            padding: 4rem var(--gap-m);
+            padding: 4rem var(--gap-m);  
         }
 
         @include responsive.max(450px) {
@@ -38,7 +38,8 @@
         }
         
         &:hover {
-            width: 110%;
+            width: 120%;
+            // scale: 1.2;
         }
     }
 

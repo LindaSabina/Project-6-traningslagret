@@ -31,7 +31,7 @@ const showHideHeader = () => {
 
     const toggleHeader = (direction, curScroll) => {
 
-        if (direction === 2 && curScroll > 120) { 
+        if (direction === 2 && curScroll > 100) { 
 
         header.classList.add('site-header--hide');
         prevDirection = direction;
