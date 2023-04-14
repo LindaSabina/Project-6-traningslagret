@@ -1,4 +1,5 @@
 @use '../components/buttons' as button;
+@use '../utilities/responsive';
 
 .news {
     display: grid;
@@ -6,6 +7,18 @@
 
     &__inner {
         grid-column: inner;
+
+        @include responsive.max(740px) {
+            h3 {
+                font-size: var(--font-size-5);
+            }
+        }
+
+        @include responsive.max(540px) {
+            h3 {
+                font-size: var(--font-size-4);
+            }
+        }
     }
 
     &__cards {
@@ -13,6 +26,16 @@
         grid-template-columns: var(--inner-grid);
         padding: var(--gap-xl) 0;
         gap: var(--gap-m);
+
+        @include responsive.max(1070px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--gap-xl);
+        }
+
+        @include responsive.max(740px) {
+            gap: var(--gap-l); 
+            padding: var(--gap-m) 0 var(--gap-xl); 
+        }
     }
 
     &__card {
@@ -42,13 +65,17 @@
             display: flex;
             align-items: center;
             gap: var(--gap-s);
+            white-space: nowrap;
+
+            @include responsive.max(1120px) {
+                font-size: var(--font-size-3);   
+            }
 
             &:hover {
 
                 .news__card-share-socials {
                     width: 100px;
                 }
-
             }
         }
 
@@ -68,15 +95,33 @@
    
     &__card-small {
 
-        grid-column: 3;
         margin-bottom: var(--gap-m);
 
-        .news__card-title {
+        @include responsive.max(1120px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        @include responsive.max(740px) {
+            grid-column: span 2;
+            margin-bottom: 0;
+        }
+
+        h2 {
             font-size: var(--font-size-5);
+
+            @include responsive.max(740px) {
+                font-size: var(--font-size-7);
+            }
+
+            @include responsive.max(540px) {
+                font-size: var(--font-size-5);   
+            }
         }
 
         .news__card-main {
-            margin: var(--gap-s) 0;
+            margin: var(--gap-s) 0 0;
         }
 
         .news__card-image {
@@ -90,17 +135,49 @@
         width: 100%;
         padding-right: 77px;
 
-        .news__card-title {
+        @include responsive.max(1120px) {
+            padding-right: 40px;
+        }
+
+        @include responsive.max(1070px) {
+            padding-right: 0;
+        }
+
+        h2 {
             font-size: 5.5rem;
+
+            @include responsive.max(1210px) {
+                font-size: 5rem; 
+            }
+    
+            @include responsive.max(740px) {
+                font-size: var(--font-size-7);
+            }
+
+            @include responsive.max(540px) {
+                font-size: var(--font-size-5);   
+            }
+        
         }
 
         .news__card-main {
             margin: var(--gap-ml) 0;
+
+            @include responsive.max(740px) {
+                margin: var(--gap-s) 0;
+            }
         }
 
         .news__card-image {
             margin-bottom: var(--gap-ml);
-        }
-    }
 
-}
+            @include responsive.max(740px) {
+                margin-bottom: var(--gap-s);
+            }
+        }
+
+
+
+
+    }
+}   
