@@ -125,7 +125,7 @@ li {
   top: -138px;
 }
 .site-header--bg-scroll {
-  background-color: rgba(63, 74, 83, 0.85);
+  background-color: rgba(63, 74, 83, 0.9);
 }
 .site-header--bg-scroll .site-header__branding {
   padding: 0;
@@ -198,6 +198,7 @@ li {
   align-items: center;
   border: 0;
   background-color: inherit;
+  cursor: pointer;
 }
 .menu__button--close .hamburger {
   transition: transform 0.2s 0.2s;
@@ -369,7 +370,7 @@ li {
 .site-menu {
   display: grid;
   grid-template-columns: var(--grid-container);
-  background-image: url(../../../assets/images/Site-menu@2x.png);
+  background-image: url(../../../assets/images/Menuimage@2x.png);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -458,6 +459,7 @@ li {
 }
 .site-menu__button:hover {
   background-color: var(--color-accent-red-100);
+  cursor: pointer;
 }
 @media screen and (max-width: 1120px) {
   .site-menu__button {
@@ -478,6 +480,7 @@ li {
 }
 .site-menu__button--member:hover {
   background-color: var(--color-accent-blue-100);
+  cursor: pointer;
 }
 @media screen and (max-width: 1120px) {
   .site-menu__button--member {
@@ -557,6 +560,7 @@ li {
 }
 .hero__button-book:hover {
   background-color: var(--color-accent-red-100);
+  cursor: pointer;
 }
 @media screen and (max-width: 1120px) {
   .hero__button-book {
@@ -577,6 +581,7 @@ li {
 }
 .hero__button-member:hover {
   background-color: var(--color-accent-blue-100);
+  cursor: pointer;
 }
 @media screen and (max-width: 1120px) {
   .hero__button-member {
@@ -654,10 +659,14 @@ li {
     text-align: left;
   }
 }
+.promo-small:hover h3 {
+  scale: 1.1;
+}
 .promo-small h3 {
   font-size: var(--font-size-7);
   margin: 0;
-  transition: all 0.3s;
+  transition: scale 0.3s;
+  scale: 1;
 }
 @media screen and (max-width: 1125px) {
   .promo-small h3 {
@@ -783,7 +792,7 @@ li {
   color: var(--color-accent-red);
 }
 .promo-small-2:hover h3 {
-  color: var(--color-accent-red-100);
+  color: var(color-accent-red-100);
 }
 .promo-small-3 {
   position: relative;
@@ -886,7 +895,7 @@ li {
   }
 }
 .promo-big__background:hover {
-  width: 110%;
+  width: 120%;
 }
 .promo-big__overlay-link {
   position: absolute;
@@ -979,6 +988,7 @@ li {
 }
 .news__card-button:hover {
   background-color: var(--color-accent-red-100);
+  cursor: pointer;
 }
 @media screen and (max-width: 1120px) {
   .news__card-button {
@@ -1176,6 +1186,7 @@ li {
 }
 .opening-hours__button:hover {
   background-color: var(--color-accent-red-100);
+  cursor: pointer;
 }
 @media screen and (max-width: 1120px) {
   .opening-hours__button {
@@ -1316,7 +1327,7 @@ li {
 }
 @media screen and (max-width: 540px) {
   .map__map {
-    height: 170px;
+    height: 250px;
   }
   .map__map img {
     width: 100%;
