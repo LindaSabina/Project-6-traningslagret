@@ -1,4 +1,6 @@
 @use '../../components/buttons' as button;
+@use '../../utilities/responsive';
+
 .hero {
     display: grid;
     grid-template-columns: var(--grid-container);
@@ -6,24 +8,58 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    background-position: center;
+
+    @include responsive.max(540px) {
+        background-position: center;
+    }
 
     &__inner {
         grid-column: inner;
         display: flex;
-        flex-wrap: column;
         align-items: center;
         position: relative;
     }
 
     &__title {
         line-height: 1.125;
-        margin-bottom: var(--gap-l)
+        margin-bottom: var(--gap-l);
+
+        @include responsive.max(880px) {
+            font-size: 5.5rem;
+        }
+
+        @include responsive.max(660px) {
+            font-size: 4.5rem;
+        }
+
+        @include responsive.max(530px) {
+            margin-right: 6rem;
+            margin-bottom: var(--gap-m);
+        }
+
+        @include responsive.max(470px) {
+            margin-right: var(--gap-xl);
+        }
+
+        @include responsive.max(400px) {
+            font-size: 4rem;
+            margin-right: var(--gap-l);
+        }
+
+        
+    }
+
+    &__content {
+        @include responsive.max(540px){
+            margin-bottom: var(--gap-l);
+        }
     }
 
     &__button-book {
         @include button.default;
         margin-right: var(--gap-s);
-
+        margin-bottom: var(--gap-s);
     }
 
     &__button-member {
@@ -48,11 +84,30 @@
             color: var(--color-light);
             gap: var(--gap-s);
             font-style: normal;
+
+            svg {
+                position: relative;
+                top: 0;
+                transition: all 0.2s;
+            }
+
+            &:hover {
+
+                svg {
+                    top: 6px;
+                }
+            }
         }
         
     }
 
     &__social {
         margin-left: var(--gap-s);
+
+        &:hover {
+            path {
+                fill: var(--color-light-400);
+            }
+        }
     }
 }
