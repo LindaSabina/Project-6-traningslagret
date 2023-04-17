@@ -124,7 +124,7 @@
             padding-bottom: 2rem;
 
             @include responsive.max(740px) {
-                font-size: var(--font-size-6);   
+                font-size: var(--font-size-5);   
             }
 
             &--reception {
