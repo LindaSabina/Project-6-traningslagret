@@ -20,6 +20,7 @@
     &__title {
         line-height: 1.125;
         margin-bottom: var(--gap-l);
+       
 
         @include responsive.max(880px) {
             font-size: 5.5rem;
