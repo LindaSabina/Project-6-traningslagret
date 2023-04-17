@@ -10,10 +10,6 @@
     height: 100vh;
     background-position: center;
 
-    @include responsive.max(540px) {
-        background-position: center;
-    }
-
     &__inner {
         grid-column: inner;
         display: flex;
@@ -46,8 +42,7 @@
             font-size: 4rem;
             margin-right: var(--gap-l);
         }
-
-        
+   
     }
 
     &__content {
