@@ -184,7 +184,6 @@ li {
 .menu__link {
   font-size: var(--font-size-3);
   color: var(--color-light);
-  padding-bottom: 5px;
 }
 .menu__link:hover {
   color: var(--color-light-400);
@@ -497,11 +496,6 @@ li {
   height: 100vh;
   background-position: center;
 }
-@media screen and (max-width: 540px) {
-  .hero {
-    background-position: center;
-  }
-}
 .hero__inner {
   grid-column: inner;
   display: flex;
@@ -665,8 +659,9 @@ li {
 .promo-small h3 {
   font-size: var(--font-size-7);
   margin: 0;
-  transition: scale 0.3s;
+  transition: all 0.3s;
   scale: 1;
+  transform-origin: left;
 }
 @media screen and (max-width: 1125px) {
   .promo-small h3 {
@@ -792,7 +787,7 @@ li {
   color: var(--color-accent-red);
 }
 .promo-small-2:hover h3 {
-  color: var(color-accent-red-100);
+  color: var(--color-accent-red-100);
 }
 .promo-small-3 {
   position: relative;
