@@ -47,6 +47,14 @@
 
         &-title {
             margin: 10px 0 0 0;
+            a {
+                line-height: 0;
+
+                &:hover {
+                    color: var(--color-dark-300);
+                }
+            }
+            
         }
 
         &-footer {

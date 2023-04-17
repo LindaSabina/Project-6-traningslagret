@@ -963,6 +963,12 @@ li {
 .news__card-title {
   margin: 10px 0 0 0;
 }
+.news__card-title a {
+  line-height: 0;
+}
+.news__card-title a:hover {
+  color: var(--color-dark-300);
+}
 .news__card-footer {
   display: flex;
   align-items: center;
