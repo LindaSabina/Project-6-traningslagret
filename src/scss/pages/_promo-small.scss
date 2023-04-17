@@ -37,19 +37,19 @@
         text-align: left;
     }
 
-    &:hover {
-        h3 {
-            scale: 1.1;
+        &:hover {
+            h3 {
+                scale: 1.1;
+            }
         }
-    }
 
-    
 
     h3 {
         font-size: var(--font-size-7);
         margin: 0;
-        transition: scale 0.3s; 
+        transition: all 0.3s; 
         scale: 1;  
+        transform-origin: left;
 
         @include responsive.max(1125px) {
             font-size: var(--font-size-6);
@@ -151,7 +151,7 @@
 
         &:hover {
             h3 {
-                color: var(color-accent-red-100);
+                color: var(--color-accent-red-100);
             }
         }
     }
@@ -165,6 +165,7 @@
             grid-column: span 2;
             text-align: center;
         }
+
         @include responsive.max(500px) {
             text-align: left;
         }
@@ -178,7 +179,6 @@
             h3 {
                 color: var(--color-accent-blue-100);
             }
-
            
         }
     }
